@@ -1,0 +1,72 @@
+*** Changelog ***
+
+= 13.2.0 - 2025.08.12
+
+* New - Implemented TWINT payment
+* Fix - Amount mismatch handled for Paypal payment
+* Fix - Incomplete orders are now prevented when end users return to the checkout page after cancelling a payment
+* Fix - Shops internal status handling has been updated to match the Novalnet transaction status
+* Enhanced - Optimized the Callback/Webhook process for fetching Dynamic IP
+* Enhanced - API/Webhook Response is normalized in the payment module for Instalment Payments 
+
+= 13.1.0 - 2023.10.03
+* New 	 - Implemented Direct Debit ACH, MB Way, Blik and Payconiq payments
+* Enhanced - Added "fax" parameter in the payment request
+
+= 13.0.0 - 2023.04.18
+* Major version release: We've improved the seamless customer experience and brand configurations in the Novalnet Merchant Admin Portal to make it easier to preview and customise the checkout page
+
+= 11.5.0   - 2022.09.22
+* New      - Implemented Online bank transfer, Alipay, WeChat Pay and Trustly payments
+* New      - Added "state" parameter in the payment request
+* Enhanced - For IBAN-specific countries, the BIC field displayed for payment like Direct Debit SEPA and Direct Debit SEPA with payment guarantee
+* Enhanced - Updated payment logo for sofort payment 
+
+= 11.4.5 - 2021.10.27
+* Fix       - Adjusted the Credit Card iframe for shop theme to make it responsive
+* Fix       - Compatibility for PHP version 8.0
+
+= 11.4.4 - 2021.07.20
+* Fix       - For direct payments order number was set as zero
+* Fix       - Transaction amount mismatch while adding Surcharge/Reduction Price during Credit Card authentication
+* Enhanced  -  Callback has been optimized as per the new testcase
+
+= 11.4.3 - 2021.03.03 =
+* Fix      - Compatibility for Oxid eShop 6.2.0
+* New 	   - Payment duration for Prepayment
+* New      - Implemented enforce 3D secure payment for countries outside EU
+* Fix 	   - Payment module adjusted for the Shop theme
+* Fix      - Adjusted payment module to restrict double booking for redirect payment
+* Enhanced - Barzahlen payment name and logo
+* Enhanced - Callback has been optimized as per the new testcase
+* Removed  - PIN by callback and PIN by SMS for Direct Debit SEPA and Invoice payment methods
+* Removed  - href links for the payment logo
+* Removed  - Proxy server configuration
+* Removed  - Gateway timeout configuration
+* Removed  - Referrer Id configuration
+
+= 11.4.2 - 2020.09.21 =
+* Fix      - Chrome SameSite cookies
+
+= 11.4.1 -  2020.04.18 =
+* Fix      - Compatibility for Oxid eShop 6.2.0
+
+= 11.4.0 - 2019.08.02 =
+* Enhanced - Creation of order as default before executing payment call in the shop system (for all redirect payment methods: online  bank transfers, Credit Card-3D secure and wallet systems), to avoid the missing orders on completion of payment on non-return of end user due to enduser closed the browser or time out at payment, etc.! 
+
+= 11.3.0 - 2019.02.28 =
+* New      - Notify end customer for storing Card / Account information
+* New      - Custom checkout overlay for Barzahlen
+* Enhanced - Implemented new encryption method for redirect payments
+* Enhanced - Auto configuration call perform via cURL method
+* Enhanced - Guaranteed payment minimum amount reduced to 9.99 EUR
+* Enhanced - Adjusted the payment module for IPV6 condition
+* Removed  - Autofill and Payment refill for payment data
+* Removed  - BIC field for Direct Debit SEPA
+* Removed  - Payment reference configuration for Invoice / prepayment
+* Removed  - Dynamic subscription management
+* Removed  - Transaction reference in payments
+
+
+= 11.2.0 - 2018.01.05 =
+*        - New release
