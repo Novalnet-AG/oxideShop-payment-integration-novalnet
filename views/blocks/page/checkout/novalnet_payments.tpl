@@ -1,0 +1,6 @@
+[{if $sPaymentID == 'novalnetpayments'}]
+    [{assign var="sTemplatePath" value='theme/novalnet_seamless.tpl'}]
+    [{include file=$oViewConf->getPaymentTemplatePath($sTemplatePath)}]
+[{else}]
+    [{$smarty.block.parent}]
+[{/if}]
