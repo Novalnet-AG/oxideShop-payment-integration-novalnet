@@ -1,0 +1,32 @@
+{
+    "name":        "novalnet/oxid6-payment-module",
+    "description": "Seamless integration with 150+ payment methods worldwide from Novalnet",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "modules",
+        "eShop",
+        "payment"
+    ],
+    "homepage":    "https://www.novalnet.de",
+    "license":     [
+        "GPL-3.0",
+        "proprietary"
+    ],
+    "authors":     [
+        {
+            "name":  "Novalnet AG",
+            "email": "technic@novalnet.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "oe/novalnet"
+        }
+    },
+    "autoload":    {
+        "psr-4": {
+            "oe\\novalnet\\": "../../../source/modules/oe/novalnet"
+       }
+    }
+}
